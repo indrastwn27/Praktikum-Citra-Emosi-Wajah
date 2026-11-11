@@ -15,7 +15,6 @@ from tensorflow.keras.models import load_model, Model
 # ==========================================
 st.set_page_config(
     page_title="Dashboard CNN Klasifikasi Emosi Wajah",
-    page_icon="😊",
     layout="wide"
 )
 
@@ -120,9 +119,7 @@ menu = st.sidebar.radio(
 )
 
 st.sidebar.divider()
-st.sidebar.markdown("**Path Dataset Lokal:**")
-st.sidebar.code(DATASET_PATH, language="bash")
-st.sidebar.markdown(f"**Status Model CNN:** {'✅ Aktif' if model else '⚠️ Belum Dilatih'}")
+
 
 # ==========================================
 # HALAMAN 1: RINGKASAN & DISTRIBUSI DATASET
